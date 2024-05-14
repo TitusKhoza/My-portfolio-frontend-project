@@ -1,0 +1,137 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+    position: relative; /* Position relative for absolute positioning of the nav */
+}
+
+
+nav {
+    background-color: white; /* Change as needed */
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: gray solid 0.5px;
+    position: sticky; /* Make the navigation bar sticky */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #888; /* Gray color */
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #000; /* Black color on hover */
+    color: #fff; /* White text on hover */
+}
+
+.resume-link {
+    text-decoration: none;
+    background-color: black; /* Change as needed */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .nav-links {
+        display: none; /* Hide nav links on mobile devices */
+    }
+
+    nav {
+        justify-content: center; /* Center align items */
+    }
+
+    /* Show only the image and resume link on mobile devices */
+    .nav-links img {
+        display: block;
+        margin: auto;
+    }
+
+    .resume-link {
+        display: block;
+        margin-top: 10px; /* Add some space between image and resume link */
+    }
+}
+
+h1 {
+    color: gray;
+}
+
+h2 {
+    color: gray;
+}
+
+/* CSS for the split section */
+.split-section {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1px;
+}
+
+.split-section .left-section {
+    flex: 1;
+    padding: 70px; /* Adjust padding as needed */
+}
+
+.split-section .right-section {
+    flex: 1;
+    padding: 70px; /* Adjust padding as needed */
+    margin-top: 1px;
+}
+
+.tech-logos {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.tech-logos li {
+    margin-right: 20px;
+}
+
+
+.profile-img {
+    max-width: 80%;
+    height: 350px; /* Change height to auto for maintaining aspect ratio */
+    float: right;
+    border-radius: 50%; /* for circular profile image */
+}
+
+/* CSS for the project section */
+
+
+footer {
+    border-top: gray solid 1px;
+    margin-top: auto; /* Push the footer to the bottom of the page */
+    background-color: ; /* Change as needed */
+    color: black; /* Change as needed */
+    padding: 10px;
+    text-align: center;
+}
